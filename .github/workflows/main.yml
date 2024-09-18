@@ -1,0 +1,112 @@
+{
+  "name": "BYTE-MD-LITE",
+  "description": "A lite version of BYTE-MD for TalkDrove Followers",
+  "keywords": ["bot", "node", "baileys", "whatsapp"],
+  "logo": "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/BYTE-MD-LITE.jpeg",
+  "repository": "https://github.com/HyHamza/BYTE-MD-LITE/",
+  "succes_url": "/",
+  "stack": "container",
+  "env": {
+    "PREFIX": {
+      "description": "choose your prefix of bot",
+      "value": ".",
+      "required": true
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Your contact status will be read automatically(type yes to active or no to deactive ; don't write in capital letter)",
+      "value": "no",
+      "required": false
+    },
+    "AUTO_DOWNLOAD_STATUS": {
+      "description": "Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
+      "value": "no",
+      "required": false
+    },
+    "PM_PERMIT": {
+      "description": "Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
+      "value": "no",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "put A name for your bot",
+      "value": "BYTE-V.lite",
+      "required": false
+    },
+    "BOT_MENU_LINKS": {
+      "description": "add one or many link for your bot menu ; eg: url1,url2,url3.....",
+      "value": "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/BYTE-MD-LITE.jpeg",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "type yes to put your bot on public mode or no to put it on private mod",
+      "value": "yes",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "insert your heroku api-key",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "insert your heroku APP NAME (the name you wrote at the beginning)",
+      "value": "",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Byte;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiV0lwUmtGWTVPOEJXWHFVQ1NrejZHR0ZPWU84NkxHM0NkLzBVeVJKRXRraz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiKzVrS3REOE90UGFvaEpDTm1SbXJJYXhIWGg0bHF6OVpNMFh3ODdRaVV5dz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ1STVMcDJLN3J2cGFwT0hIRVpuQ1lQSlg3eVl5U2RMWVB4eC9VSDZBcWxjPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwS05Xa1pxckRlWTJLdGU4djlNSEp1SWJ1MmdlTkIrUXpnbmowUHRLL2drPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im1CYzhUaU5JaEdZTlY1YmdHaTRLbVhHaWNuWi9HT3ovTS9ldHlaWEhKbDA9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjdWTnlrWExtUFpYTHF5WVpidFdjWTlsMUNMUW5HNDgva3N3N2lOZkY5d3M9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoic084TXZTeFVjbGV5dlJ6N3VYNzdDd29oR08vZGRINEFwbE9EL1JseTlGaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYjlBdkhDZ0p5MENXZEt0NWR0L2JoZVhvQmN0bXhlbGUzRWJvTXJiV0hHbz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlhobDdCOWsxOFQvRFFadXBGZ2lpdFZNc09Zc1F3QUduaHBnNXNJM3doU056a3ZZSzJoOVdndTRhL1ZsTWdjd2ZJZUtVQkdzcHFrQzRUYXJ2aWZwRmdRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTM5LCJhZHZTZWNyZXRLZXkiOiJRdVRrWm8rRlAvcGU1NndnMWg3cFZaeEFPUUFwQkNxTzBrNVhuMWFyQ3dBPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjI1NTc1MzMwNjU4NkBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiI1NUY2QUI4MURCRjE3NkMzRDk3M0E3QkFEOEUzOTIwNSJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzI2NjE5NDAwfSx7ImtleSI6eyJyZW1vdGVKaWQiOiIyNTU3NTMzMDY1ODZAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiREIzRjYzN0I0NEY2QjlGNTU4ODc3ODZGMjUyQzJDNkEifSwibWVzc2FnZVRpbWVzdGFtcCI6MTcyNjYxOTQxMn1dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoibXdrbjJqLXdUOG1DTVppWTBIRjVHQSIsInBob25lSWQiOiJlMGY0NWI4MC03ZWU0LTQ1OGUtODI2OC04NjJkMzRiOTU4NzYiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVk1ERVlDVmhqcTduYldTV3VoRjNMQUpsQmxZPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImRLZFhsQ2ZBNHYwMXhUQXNFU2Z3QnRHVFZURT0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJaWEs0QVYyRSIsIm1lIjp7ImlkIjoiMjU1NzUzMzA2NTg2OjI2QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IkJyasOhbm4ifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0p5MG43QUNFUEM5cUxjR0dBRWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6IjFRMzl1WHNvb05tTGtHVDNobmlFVkNNWTRSZ2RSa25FVG1NSndkcEd0M1k9IiwiYWNjb3VudFNpZ25hdHVyZSI6Im1QYjFBQTl4dW9pNElzWFd0VHdvSzlzQ01CUmtidEFxWnA4bklMTVE5Q1Z0bkhtclcrcFZzTVdWbVcxcDI4NTc3VFFxS3JVTmJNQllJR1dsN05ja0NnPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJsaUgvWkQ5ck5JdHpJSDh3ZDBDdzVBNDhnclFQYklUM1BIcEZ6UlZjM0Ywdjc2b0FCUXZQMFlDMnE1MU5ta2QvUE9wbEkrQW9sRWVXQThkVkR4VlJnQT09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI1NTc1MzMwNjU4NjoyNkBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJkVU4vYmw3S0tEWmk1Qms5NFo0aEZRakdPRVlIVVpKeEU1akNjSGFScmQyIn19XSwicGxhdGZvcm0iOiJzbWJhIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzI2NjE5MzkyLCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQU5vNyJ9",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "desc": "brjann",
+      "required": false,
+      "value": "TalkDrove"
+    },
+    "CHAT_BOT": {
+      "desc": "Put on to allow the bot to chat with people who text you or put off if you don't want the bot to chat with people",
+      "required": false,
+      "value": "off"
+    },
+    "OWNER_NUMBER": {
+      "desc": "Your number, don't put '+' and put your area code (e.g., '92')",
+      "required": true,
+      "value": "753306586"
+    },
+    "WARN_COUNT": {
+      "desc": "this is the limit of warn for warning commands",
+      "required": false,
+      "value": "3"
+    },
+    "STARTING_BOT_MESSAGE": {
+      "description": "if you don't want starting-bot-message put no else put yes",
+      "required": true,
+      "value": "yes"
+    },
+    "AUTO_REACTION": {
+      "description": "Put on if you want the bot to react to people's messages. It won't react to your messages and those from creator Hamza.",
+      "value": "off",
+      "required": false
+    },
+    "PRESENCE": {
+      "description": "Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
+      "value": "1",
+      "required": false
+    },
+    "ANTI_DELETE_MESSAGE": {
+      "description": "if you want to enable anti delete message put yes else put no",
+      "value": "yes",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
+}
